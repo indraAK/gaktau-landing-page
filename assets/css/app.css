@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap");
+
+body {
+  font-family: "IBM Plex Sans", sans-serif;
+  color: #14203e;
+}
+
+.navbar {
+  border-bottom: 1px solid #f4e8d8;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.08);
+}
+
+.navbar-nav .nav-link {
+  --bs-nav-link-color: hsl(223, 51%, 16%);
+  --bs-nav-link-hover-color: hsl(211, 100%, 50%);
+}
+
+.btn-light-red {
+  --bs-btn-hover-bg: hsl(34, 44%, 92%);
+  --bs-btn-bg: hsl(34, 44%, 90%);
+}
+
+.btn-light-red:is(:hover, :focus) {
+  background: var(--bs-btn-hover-bg);
+}
+
+.hero-section {
+  background: #fffcf8;
+  min-height: 65vh;
+}
+
+.hero-section .hero-content {
+  max-width: 600px;
+  margin-inline: auto;
+}
+
+.hero-section .hero-title {
+  font-size: clamp(35px, 10vw, 60px);
+}
+
+.featured-articles {
+  background-color: rgb(247, 247, 247);
+}
+
+.post-card {
+  background-color: #fff;
+  padding: 16px 20px;
+  border: 1px solid rgb(238, 238, 238);
+  border-radius: 6px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.post-card .thumbnail {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.post-card .thumbnail img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+}
+
+.post-card .card-body {
+  padding-top: 16px;
+}
+
+.post-card .card-title {
+  font-size: 18px;
+}
+
+.post-card .text-muted {
+  font-size: 13px;
+}
+
+.contact-list {
+  display: grid;
+  row-gap: 4px;
+  align-items: start;
+}
+
+.contact-group {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.contact-group .contact-icon {
+  display: block;
+  width: 20px;
+}
+
+.contact-group .contact-info {
+  font-size: 14px;
+  flex-grow: 1;
+}
